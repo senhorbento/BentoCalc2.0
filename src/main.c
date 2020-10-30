@@ -5,6 +5,7 @@
 
 int main(){
     int max_opc, escolha;
+    
     do{max_opc=menuPrincipal();
     scanf("%d", &escolha);
     }while(escolha<0 || escolha>max_opc);
