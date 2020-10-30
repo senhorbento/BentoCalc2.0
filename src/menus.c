@@ -4,14 +4,14 @@
 
 #include "menus.h"
 
-#define _TAM_TITULO_ 15
+#define _TAM_TITULO_ 30
 
 void limparTela(){
         system("clear || cls");
         return;
 }
 void cabecalho(char titulo[]){
-        #define _MAX_ 20
+        #define _MAX_ 40
         int i,espacos;
         limparTela();
         for(i=0;i<_MAX_;i++) printf("#");

@@ -17,6 +17,7 @@ int main(){
             //menuEletrica();
         case 2:
             limparTela();
+            cabecalho("Equacao do segundo grau");
             equacao2();
             break;
         case 3: 
@@ -28,7 +29,7 @@ int main(){
         case 6: 
             //menuVelocidade();
         case 7: 
-            //menuZoeira();
+            menuZoeira();
         default:
             break;
     }
