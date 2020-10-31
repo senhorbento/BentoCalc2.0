@@ -6,6 +6,7 @@
 
 void equacao2(){
     double A,B,C,D;
+    limparTela();
     cabecalho("Equacao do segundo grau");
     printf("Insira o valor de a = ");
     scanf("%lf", &A);
@@ -30,7 +31,8 @@ void equacao2(){
 }
 void voltagem(){
     double B,C;
-    printf("Calculo de Voltagem:\n\n");
+    limparTela();
+    cabecalho("Calculo de Voltagem:");
     printf("Valor da Resistencia = ");
     scanf("%lf", &B);
     printf("Valor da Corrente = ");

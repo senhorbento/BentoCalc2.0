@@ -31,9 +31,8 @@ void cabecalho(char titulo[]){
 }
 
 int menuPrincipal(){
-        char titulo[_TAM_TITULO_]="Materias";
         limparTela();
-        cabecalho(titulo);
+        cabecalho("Materias");
         printf("1 - Eletrica\n");
         printf("2 - Equacao do 2 grau\n");
         printf("3 - Estatistica\n");
@@ -47,9 +46,8 @@ int menuPrincipal(){
 }
 
 int menuEletrica(){
-        char titulo[_TAM_TITULO_]="Eletrica";
         limparTela();
-        cabecalho(titulo);
+        cabecalho("Eletrica");
         printf("1 - Voltagem\n");
         printf("2 - Resistencia\n");
         printf("3 - Corrente\n");
@@ -60,9 +58,8 @@ int menuEletrica(){
 }
 
 int menuEstatistica(){
-        char titulo[_TAM_TITULO_]="Estatistica";
         limparTela();
-        cabecalho(titulo);
+        cabecalho("Estatistica");
         printf("1 - Media Aritmetica\n");
         printf("2 - Variancia\n");
         printf("3 - Desvio Padrao\n\n");
@@ -72,9 +69,8 @@ int menuEstatistica(){
 }
 
 int menuMecanica(){
-        char titulo[_TAM_TITULO_]="Mecanica";
         limparTela();
-        cabecalho(titulo);
+        cabecalho("Mecanica");
         printf("1 - Velocidade Media\n");
         printf("2 - Variacao de Espaco\n");
         printf("3 - Variacao de Tempo\n\n");
@@ -84,9 +80,8 @@ int menuMecanica(){
 }
 
 int menuTermometria(){
-        char titulo[_TAM_TITULO_]="Termometria";
         limparTela();
-        cabecalho(titulo);
+        cabecalho("Termometria");
         printf("1 - Celsius para Fahrenheit\n");
         printf("2 - Celsius para Kelvin\n");
         printf("3 - Fahrenheit para Kelvin\n");
@@ -99,9 +94,8 @@ int menuTermometria(){
 }
 
 int menuVelocidade(){
-        char titulo[_TAM_TITULO_]="Velocidades";
         limparTela();
-        cabecalho(titulo);
+        cabecalho("Velocidades");
         printf("1 - Km/h para Mph\n");
         printf("2 - Km/h para M/s\n");
         printf("3 - Mph para Km/h\n");
@@ -115,7 +109,7 @@ int menuVelocidade(){
 
 void menuZoeira(){
         limparTela();
-        printf(":::::::Men At Work:::::::\n");
+        cabecalho(":::::::Men At Work::::::::::::::::::");
         return ;
 }
 
