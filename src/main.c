@@ -4,8 +4,7 @@
 #include "formulas.h"
 
 int main(){
-    int max_opc, escolha, selecao, continuar;
-    
+    int escolha, selecao, continuar;
     do{
         menuPrincipal();
         scanf("%d", &escolha);
@@ -16,7 +15,7 @@ int main(){
                 break;
             case 1: 
                 do{
-                max_opc=menuEletrica();
+                menuEletrica();
                 scanf("%d", &selecao);
                 switch(selecao){
                     case 0:
@@ -28,8 +27,23 @@ int main(){
                         }while(continuar!=0);
                         break;
                     case 2:
+                        do{
+                            resistencia();
+                            continuar=deNovo();
+                        }while(continuar!=0);
+                        break;
                     case 3:
+                        do{
+                            corrente();
+                            continuar=deNovo();
+                        }while(continuar!=0);
+                        break;
                     case 4:
+                        do{
+                            menuPotencia();
+                            continuar=deNovo();
+                        }while(continuar!=0);
+                        break;
                     default:
                         break;
                 }
@@ -43,25 +57,25 @@ int main(){
                 break;
             case 3:
                 do{
-                    max_opc=menuEstatistica();
+                    menuEstatistica();
                     scanf("%d", &selecao);
                 }while(continuar!=0);
                 break;
             case 4: 
                 do{
-                    max_opc=menuMecanica();
+                    menuMecanica();
                     scanf("%d", &selecao);
                 }while(continuar!=0);
                 break;
             case 5: 
                 do{
-                    max_opc=menuTermometria();
+                    menuTermometria();
                     scanf("%d", &selecao);
                 }while(continuar!=0);
                 break;
             case 6: 
                 do{
-                    max_opc=menuVelocidade();
+                    menuVelocidade();
                     scanf("%d", &selecao);
                 }while(continuar!=0);
                 break;

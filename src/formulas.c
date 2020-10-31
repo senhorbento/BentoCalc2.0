@@ -4,6 +4,67 @@
 #include "menus.h"
 #include "formulas.h"
 
+void voltagem(){
+    double R,C;
+    limparTela();
+    cabecalho("Calculo de Voltagem");
+    printf("Valor da Resistencia = ");
+    scanf("%lf", &R);
+    printf("Valor da Corrente = ");
+    scanf("%lf", &C);
+    printf("\n");
+    R = R * C;
+    printf("Voltagem = %.3lf\n", R);
+}
+void resistencia(){
+    double A,B;
+    limparTela();
+    cabecalho("Calculo de Resistencia");
+    printf("Valor da Voltagem = ");
+    scanf("%lf", &A);
+    printf("Valor da Corrente = ");
+    scanf("%lf", &B);
+    printf("\n");
+    B = A / B;
+    printf("Resistencia = %.3lf\n", B);
+}
+void corrente(){
+    double A,B;
+    limparTela();
+    cabecalho("Calculo de Corrente");
+    printf("Valor da Voltagem = ");
+    scanf("%lf", &A);
+    printf("Valor da Resistencia = ");
+    scanf("%lf", &B);
+    printf("\n");
+    B = A / B;
+    printf("Corrente = %.3lf\n", B);
+}
+void potenciaResistencia(){
+    double A,B;
+    limparTela();
+    cabecalho("Potencia sabendo Resistencia");
+    printf("Valor da Resistencia = ");
+    scanf("%lf", &A);
+    printf("Valor da Corrente = ");
+    scanf("%lf", &B);
+    printf("\n");
+    B = A * pow(B, 2);
+    printf("Potencia = %lf\n", B);
+}
+
+void potenciaVoltagem(){
+    double A,B;
+    cabecalho("Potencia sabendo Voltagem");
+    printf("Valor da Voltagem = ");
+    scanf("%lf", &A);
+    printf("Valor da Corrente = ");
+    scanf("%lf", &B);
+    printf("\n");
+    B = A * B;
+    printf("Potencia = %lf\n", B);
+}
+
 void equacao2(){
     double A,B,C,D;
     limparTela();
@@ -28,16 +89,4 @@ void equacao2(){
         printf("Delta = %.5lf\n", D);
     }
     return;
-}
-void voltagem(){
-    double B,C;
-    limparTela();
-    cabecalho("Calculo de Voltagem:");
-    printf("Valor da Resistencia = ");
-    scanf("%lf", &B);
-    printf("Valor da Corrente = ");
-    scanf("%lf", &C);
-    printf("\n");
-    B = B * C;
-    printf("Voltagem = %.3lf\n", B);
 }

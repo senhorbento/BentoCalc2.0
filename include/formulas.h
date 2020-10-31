@@ -3,5 +3,9 @@
 
 void equacao2();
 void voltagem();
+void resistencia();
+void corrente();
+void potenciaResistencia();
+void potenciaVoltagem();
 
 #endif

@@ -30,7 +30,7 @@ void cabecalho(char titulo[]){
         return;
 }
 
-int menuPrincipal(){
+void menuPrincipal(){
         limparTela();
         cabecalho("Materias");
         printf("1 - Eletrica\n");
@@ -42,46 +42,46 @@ int menuPrincipal(){
         printf("7 - ...\n\n");
         printf("0 - Sair\n\n");
         printf("Qual Materia? ");
-        return 7;
+        return ;
 }
 
-int menuEletrica(){
+void menuEletrica(){
         limparTela();
-        cabecalho("Eletrica");
+        cabecalho("Eletrica - Formulas conhecidas");
         printf("1 - Voltagem\n");
         printf("2 - Resistencia\n");
         printf("3 - Corrente\n");
         printf("4 - Potencia\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return 4;
+        return ;
 }
 
-int menuEstatistica(){
+void menuEstatistica(){
         limparTela();
-        cabecalho("Estatistica");
+        cabecalho("Estatistica - Formulas conhecidas");
         printf("1 - Media Aritmetica\n");
         printf("2 - Variancia\n");
         printf("3 - Desvio Padrao\n\n");
         printf("0 - Voltar\n");
         printf("Qual operacao? ");
-        return 3;
+        return ;
 }
 
-int menuMecanica(){
+void menuMecanica(){
         limparTela();
-        cabecalho("Mecanica");
+        cabecalho("Mecanica - Formulas conhecidas");
         printf("1 - Velocidade Media\n");
         printf("2 - Variacao de Espaco\n");
         printf("3 - Variacao de Tempo\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return 3;
+        return ;
 }
 
-int menuTermometria(){
+void menuTermometria(){
         limparTela();
-        cabecalho("Termometria");
+        cabecalho("Termometria - Formulas conhecidas");
         printf("1 - Celsius para Fahrenheit\n");
         printf("2 - Celsius para Kelvin\n");
         printf("3 - Fahrenheit para Kelvin\n");
@@ -90,12 +90,12 @@ int menuTermometria(){
         printf("6 - Kelvin para Fahrenheit\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return 6;
+        return ;
 }
 
-int menuVelocidade(){
+void menuVelocidade(){
         limparTela();
-        cabecalho("Velocidades");
+        cabecalho("Velocidades - Formulas conhecidas");
         printf("1 - Km/h para Mph\n");
         printf("2 - Km/h para M/s\n");
         printf("3 - Mph para Km/h\n");
@@ -104,7 +104,16 @@ int menuVelocidade(){
         printf("6 - M/s para Mph\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return 6;
+        return ;
+}
+
+void menuPotencia(){
+        limparTela();
+        cabecalho("Potencia - Formulas conhecidas");
+        printf("1 - Sabendo a Resistencia\n");
+        printf("2 - Sabendo a Voltagem\n\n");
+        printf("Qual o caso? ");
+        return ;
 }
 
 void menuZoeira(){
@@ -117,7 +126,7 @@ int deNovo(){
         char resposta[3];
         do{
                 printf("\nDeseja continuar? [S/N] ");
-                fgets("%s", resposta);
+                scanf("%s", resposta);
                 if(strlen(resposta)>1)
                         printf("Somente \"S\" ou \"N\" eh aceito\n");
         }while(strlen(resposta)>1);

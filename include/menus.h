@@ -3,13 +3,14 @@
 
 void limparTela();
 void cabecalho();
-int menuPrincipal();
-int menuEletrica();
-int menuEstatistica();
-int menuMecanica();
-int menuTermometria();
-int menuVelocidade();
+void menuPrincipal();
+void menuEletrica();
+void menuEstatistica();
+void menuMecanica();
+void menuTermometria();
+void menuVelocidade();
 void menuZoeira();
+void menuPotencia();
 int deNovo();
 
 #endif
