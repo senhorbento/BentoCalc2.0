@@ -117,13 +117,13 @@ int deNovo(){
         char resposta[3];
         do{
                 printf("\nDeseja continuar? [S/N] ");
-                scanf("%s", resposta);
+                fgets("%s", resposta);
                 if(strlen(resposta)>1)
                         printf("Somente \"S\" ou \"N\" eh aceito\n");
         }while(strlen(resposta)>1);
         limparTela();
-        if (strcmp(resposta,"N") || strcmp(resposta,"n")) {
+        if (strcmp(resposta,"N") || strcmp(resposta,"n")) 
                 return 0;
-        }
-        else return 1;   
+        else if (strcmp(resposta,"S") || strcmp(resposta,"s")) 
+                return 1;   
 }
