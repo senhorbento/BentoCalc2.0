@@ -28,3 +28,14 @@ void equacao2(){
     }
     return;
 }
+void voltagem(){
+    double B,C;
+    printf("Calculo de Voltagem:\n\n");
+    printf("Valor da Resistencia = ");
+    scanf("%lf", &B);
+    printf("Valor da Corrente = ");
+    scanf("%lf", &C);
+    printf("\n");
+    B = B * C;
+    printf("Voltagem = %.3lf\n", B);
+}

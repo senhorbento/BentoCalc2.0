@@ -2,5 +2,6 @@
 #define _FORMULAS_H_
 
 void equacao2();
+void voltagem();
 
 #endif

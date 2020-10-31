@@ -10,14 +10,30 @@ int main(){
         max_opc=menuPrincipal();
         scanf("%d", &escolha);
     }while(escolha<0 || escolha>max_opc);
-
+    
     switch(escolha){
-        case 0: 
+        case 0:
+            limparTela();
+            cabecalho("Obrigado por usar a BENTO CALC!"); 
             return 0;
         case 1: 
             do{
-                max_opc=menuEletrica();
-                scanf("%d", &escolha);
+            max_opc=menuEletrica();
+            scanf("%d", &escolha);
+                switch(escolha){
+                    case 1: 
+                        do{
+                            limparTela();
+                            voltagem();
+                            continuar=deNovo();
+                        }while(continuar!=0);
+                        break;
+                    case 2:
+                    case 3:
+                    case 4:
+                    default:
+                    break;
+                }
             }while(escolha<0 || escolha>max_opc);
             break;
         case 2:
