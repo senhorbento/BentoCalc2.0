@@ -10,6 +10,7 @@ void limparTela(){
         system("clear || cls");
         return;
 }
+
 void cabecalho(char titulo[]){
         #define _MAX_ 40
         int i,espacos;
@@ -28,6 +29,7 @@ void cabecalho(char titulo[]){
         if(i==_MAX_) printf("\n\n");
         return;
 }
+
 int menuPrincipal(){
         char titulo[_TAM_TITULO_]="Materias";
         limparTela();
@@ -43,6 +45,7 @@ int menuPrincipal(){
         printf("Qual Materia? ");
         return 7;
 }
+
 int menuEletrica(){
         char titulo[_TAM_TITULO_]="Eletrica";
         limparTela();
@@ -55,6 +58,7 @@ int menuEletrica(){
         printf("Qual operacao? ");
         return 4;
 }
+
 int menuEstatistica(){
         char titulo[_TAM_TITULO_]="Estatistica";
         limparTela();
@@ -66,6 +70,7 @@ int menuEstatistica(){
         printf("Qual operacao? ");
         return 3;
 }
+
 int menuMecanica(){
         char titulo[_TAM_TITULO_]="Mecanica";
         limparTela();
@@ -77,6 +82,7 @@ int menuMecanica(){
         printf("Qual operacao? ");
         return 3;
 }
+
 int menuTermometria(){
         char titulo[_TAM_TITULO_]="Termometria";
         limparTela();
@@ -91,6 +97,7 @@ int menuTermometria(){
         printf("Qual operacao? ");
         return 6;
 }
+
 int menuVelocidade(){
         char titulo[_TAM_TITULO_]="Velocidades";
         limparTela();
@@ -105,8 +112,24 @@ int menuVelocidade(){
         printf("Qual operacao? ");
         return 6;
 }
+
 void menuZoeira(){
         limparTela();
-        printf(":::::: Men at Work ::::::");
+        printf(":::::: Men at Work ::::::\n");
         return ;
+}
+
+int deNovo(){
+        char resposta[3];
+        do{
+                printf("\nDeseja continuar? [S/N] ");
+                scanf("%s", resposta);
+                if(strlen(resposta)>1)
+                        printf("Somente \"S\" ou \"N\" eh aceito\n");
+        }while(strlen(resposta)>1);
+        limparTela();
+        if (strcmp(resposta,"N") || strcmp(resposta,"n")) {
+                return 0;
+        }
+        else return 1;   
 }

@@ -4,10 +4,11 @@
 #include "formulas.h"
 
 int main(){
-    int max_opc, escolha;
+    int max_opc, escolha, continuar;
     
-    do{max_opc=menuPrincipal();
-    scanf("%d", &escolha);
+    do{
+        max_opc=menuPrincipal();
+        scanf("%d", &escolha);
     }while(escolha<0 || escolha>max_opc);
 
     switch(escolha){
@@ -16,9 +17,12 @@ int main(){
         case 1: 
             //menuEletrica();
         case 2:
-            limparTela();
-            cabecalho("Equacao do segundo grau");
-            equacao2();
+            do{
+                limparTela();
+                cabecalho("Equacao do segundo grau");
+                equacao2();
+                continuar=deNovo();
+            }while(continuar!=0);
             break;
         case 3: 
             //menuEstatistica();

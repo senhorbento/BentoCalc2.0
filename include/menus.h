@@ -10,5 +10,6 @@
     int menuTermometria();
     int menuVelocidade();
     void menuZoeira();
+    int deNovo();
 
 #endif
