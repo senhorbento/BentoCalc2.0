@@ -13,30 +13,47 @@ int main(){
 
     switch(escolha){
         case 0: 
-            break;
+            return 0;
         case 1: 
-            //menuEletrica();
+            do{
+                max_opc=menuEletrica();
+                scanf("%d", &escolha);
+            }while(escolha<0 || escolha>max_opc);
+            break;
         case 2:
             do{
                 limparTela();
-                cabecalho("Equacao do segundo grau");
                 equacao2();
                 continuar=deNovo();
             }while(continuar!=0);
             break;
-        case 3: 
-            //menuEstatistica();
+        case 3:
+            do{
+                max_opc=menuEstatistica();
+                scanf("%d", &escolha);
+            }while(escolha<0 || escolha>max_opc);
+            break;
         case 4: 
-            //menuMecanica();
+            do{
+                max_opc=menuMecanica();
+                scanf("%d", &escolha);
+            }while(escolha<0 || escolha>max_opc);
+            break;
         case 5: 
-            //menuTermometria();
+            do{
+                max_opc=menuTermometria();
+                scanf("%d", &escolha);
+            }while(escolha<0 || escolha>max_opc);
+            break;
         case 6: 
-            //menuVelocidade();
+            do{
+                max_opc=menuVelocidade();
+                scanf("%d", &escolha);
+            }while(escolha<0 || escolha>max_opc);
+            break;
         case 7: 
             menuZoeira();
         default:
             break;
     }
-
-    return 0;
 }

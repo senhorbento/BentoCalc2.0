@@ -5,6 +5,7 @@
 
 void equacao2(){
     double A,B,C,D;
+    cabecalho("Equacao do segundo grau");
     printf("Insira o valor de a = ");
     scanf("%lf", &A);
     printf("Insira o valor de b = ");

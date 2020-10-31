@@ -115,7 +115,7 @@ int menuVelocidade(){
 
 void menuZoeira(){
         limparTela();
-        printf(":::::: Men at Work ::::::\n");
+        printf(":::::::Men At Work:::::::\n");
         return ;
 }
 
