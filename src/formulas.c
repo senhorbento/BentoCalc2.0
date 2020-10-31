@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "menus.c"
+#include "menus.h"
 #include "formulas.h"
 
 void equacao2(){
