@@ -4,7 +4,7 @@
 #include "formulas.h"
 
 int main(){
-    int escolha, selecao, continuar;
+    int escolha, selecao, continuar,subSelecao;
     do{
         menuPrincipal();
         scanf("%d", &escolha);
@@ -17,36 +17,51 @@ int main(){
                 do{
                 menuEletrica();
                 scanf("%d", &selecao);
-                switch(selecao){
-                    case 0:
-                        break;
-                    case 1: 
-                        do{
-                            voltagem();
-                            continuar=deNovo();
-                        }while(continuar!=0);
-                        break;
-                    case 2:
-                        do{
-                            resistencia();
-                            continuar=deNovo();
-                        }while(continuar!=0);
-                        break;
-                    case 3:
-                        do{
-                            corrente();
-                            continuar=deNovo();
-                        }while(continuar!=0);
-                        break;
-                    case 4:
-                        do{
-                            menuPotencia();
-                            continuar=deNovo();
-                        }while(continuar!=0);
-                        break;
-                    default:
-                        break;
-                }
+                    switch(selecao){
+                        case 0:
+                            break;
+                        case 1: 
+                            do{
+                                voltagem();
+                                continuar=deNovo();
+                            }while(continuar!=0);
+                            break;
+                        case 2:
+                            do{
+                                resistencia();
+                                continuar=deNovo();
+                            }while(continuar!=0);
+                            break;
+                        case 3:
+                            do{
+                                corrente();
+                                continuar=deNovo();
+                            }while(continuar!=0);
+                            break;
+                        case 4:
+                            do{
+                                subSelecao=menuPotencia();
+                                switch (subSelecao){
+                                    case 0: 
+                                        break;
+                                    case 1:
+                                        do{
+                                            potenciaResistencia();
+                                            continuar=deNovo();
+                                        }while(continuar!=0);
+                                        break;
+                                    case 2:
+                                        do{
+                                            potenciaVoltagem();
+                                            continuar=deNovo();
+                                        }while(continuar!=0);
+                                        break;
+                                }
+                            }while(subSelecao!=0);
+                            break;
+                        default:
+                            break;
+                    }
                 }while(selecao!=0);
                 break;
             case 2:

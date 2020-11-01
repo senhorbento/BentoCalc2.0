@@ -10,7 +10,7 @@ void menuMecanica();
 void menuTermometria();
 void menuVelocidade();
 void menuZoeira();
-void menuPotencia();
+int menuPotencia();
 int deNovo();
 
 #endif

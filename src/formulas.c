@@ -14,7 +14,7 @@ void voltagem(){
     scanf("%lf", &C);
     printf("\n");
     R = R * C;
-    printf("Voltagem = %.3lf\n", R);
+    printf("Voltagem = %.3lf Volts\n", R);
 }
 void resistencia(){
     double A,B;
@@ -26,7 +26,7 @@ void resistencia(){
     scanf("%lf", &B);
     printf("\n");
     B = A / B;
-    printf("Resistencia = %.3lf\n", B);
+    printf("Resistencia = %.3lf Ohms\n", B);
 }
 void corrente(){
     double A,B;
@@ -38,7 +38,7 @@ void corrente(){
     scanf("%lf", &B);
     printf("\n");
     B = A / B;
-    printf("Corrente = %.3lf\n", B);
+    printf("Corrente = %.3lf Amperes\n", B);
 }
 void potenciaResistencia(){
     double A,B;
@@ -50,7 +50,7 @@ void potenciaResistencia(){
     scanf("%lf", &B);
     printf("\n");
     B = A * pow(B, 2);
-    printf("Potencia = %lf\n", B);
+    printf("Potencia = %lf Watts\n", B);
 }
 
 void potenciaVoltagem(){
@@ -62,7 +62,7 @@ void potenciaVoltagem(){
     scanf("%lf", &B);
     printf("\n");
     B = A * B;
-    printf("Potencia = %lf\n", B);
+    printf("Potencia = %lf Watts\n", B);
 }
 
 void equacao2(){

@@ -107,13 +107,21 @@ void menuVelocidade(){
         return ;
 }
 
-void menuPotencia(){
+int menuPotencia(){
+        #define _MAX_OP_ 2
+        int selecao;
+        do{
         limparTela();
         cabecalho("Potencia - Formulas conhecidas");
         printf("1 - Sabendo a Resistencia\n");
         printf("2 - Sabendo a Voltagem\n\n");
+        printf("0 - Voltar\n\n");
         printf("Qual o caso? ");
-        return ;
+        scanf("%d", &selecao);
+        }while(selecao < 0 || selecao > _MAX_OP_);
+        if (selecao == 1) return 1;
+        else if(selecao == 2) return 2;
+        else if(selecao == 0) return 0;
 }
 
 void menuZoeira(){
