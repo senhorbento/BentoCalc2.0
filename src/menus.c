@@ -130,17 +130,13 @@ void menuZoeira(){
         return ;
 }
 
-int deNovo(){
-        char resposta[3];
+int deNovo(int resposta){
         do{
-                printf("\nDeseja continuar? [S/N] ");
-                scanf("%s", resposta);
-                if(strlen(resposta)>1)
-                        printf("Somente \"S\" ou \"N\" eh aceito\n");
-        }while(strlen(resposta)>1);
+                printf("\n1 - Sim\n0 - Nao\nDeseja continuar? ");
+                scanf("%d", resposta);
+                if(resposta > 1 || resposta < 0)
+                        printf("Somente \"1\" ou \"0\" eh aceito\n");
+        }while(resposta > 1 || resposta < 0);
+        return resposta;
         limparTela();
-        if (strcmp(resposta,"N") || strcmp(resposta,"n")) 
-                return 0;
-        else if (strcmp(resposta,"S") || strcmp(resposta,"s")) 
-                return 1;   
 }
