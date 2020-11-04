@@ -8,7 +8,6 @@
 
 void limparTela(){
         system("clear || cls");
-        return;
 }
 
 void cabecalho(char titulo[]){
@@ -27,7 +26,6 @@ void cabecalho(char titulo[]){
         }
         for(i=0;i<_MAX_;i++) printf("#");
         if(i==_MAX_) printf("\n\n");
-        return;
 }
 
 void menuPrincipal(){
@@ -42,7 +40,6 @@ void menuPrincipal(){
         printf("7 - ...\n\n");
         printf("0 - Sair\n\n");
         printf("Qual Materia? ");
-        return ;
 }
 
 void menuEletrica(){
@@ -54,7 +51,6 @@ void menuEletrica(){
         printf("4 - Potencia\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return ;
 }
 
 void menuEstatistica(){
@@ -65,7 +61,6 @@ void menuEstatistica(){
         printf("3 - Desvio Padrao\n\n");
         printf("0 - Voltar\n");
         printf("Qual operacao? ");
-        return ;
 }
 
 void menuMecanica(){
@@ -76,7 +71,6 @@ void menuMecanica(){
         printf("3 - Variacao de Tempo\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return ;
 }
 
 void menuTermometria(){
@@ -90,7 +84,6 @@ void menuTermometria(){
         printf("6 - Kelvin para Fahrenheit\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return ;
 }
 
 void menuVelocidade(){
@@ -104,7 +97,6 @@ void menuVelocidade(){
         printf("6 - M/s para Mph\n\n");
         printf("0 - Voltar\n\n");
         printf("Qual operacao? ");
-        return ;
 }
 
 int menuPotencia(){
@@ -127,7 +119,6 @@ int menuPotencia(){
 void menuZoeira(){
         limparTela();
         cabecalho(":::::::Men At Work::::::::::::::::::");
-        return ;
 }
 
 int deNovo(int resposta){
@@ -137,6 +128,6 @@ int deNovo(int resposta){
                 if(resposta > 1 || resposta < 0)
                         printf("Somente \"1\" ou \"0\" eh aceito\n");
         }while(resposta > 1 || resposta < 0);
-        return resposta;
         limparTela();
+        return resposta;
 }
