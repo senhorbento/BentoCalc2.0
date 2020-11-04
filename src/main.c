@@ -26,7 +26,7 @@ int main(){
                                 voltagem();
                                 deNovo(continuar);
                                 printf("%d", continuar);
-                            }while(continuar < 0 || continuar > 1);  // Bugado
+                            }while(continuar!=0);  // Bugado
                             break;
                         case 2:
                             do{
