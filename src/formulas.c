@@ -88,5 +88,4 @@ void equacao2(){
         printf("X2 = %.5lf\n", C);
         printf("Delta = %.5lf\n", D);
     }
-    return;
 }
