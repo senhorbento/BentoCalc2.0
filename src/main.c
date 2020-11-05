@@ -16,7 +16,6 @@ int main(){
             case 1: 
                 do{
                 menuEletrica();
-                printf("%d", continuar);
                 scanf("%d", &selecao);
                     switch(selecao){
                         case 0:
@@ -24,9 +23,9 @@ int main(){
                         case 1: 
                             do{
                                 voltagem();
-                                deNovo(continuar);
+                                continuar=deNovo();
                                 printf("%d", continuar);
-                            }while(continuar!=0);  // Bugado
+                            }while(continuar!=0);
                             break;
                         case 2:
                             do{
