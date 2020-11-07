@@ -15,12 +15,12 @@
   Resistencia;<br/>
   Potencia.<br/>
   
-- <h4>Grandezas mecanicas:</h4><br/>
+- <h4>Grandezas mecanicas:</h4>
   Velocidade media;<br/>
   Variação de espaço;<br/>
   Variação de tempo.<br/>
   
-- <h4>Conversões termometricas:</h4><br/>
+- <h4>Conversões termometricas:</h4>
   Celsius para Fahrenheit;<br/>
   Celsius para Kelvin;<br/>
   Fahrenheit para Kelvin;<br/>
@@ -28,7 +28,7 @@
   Kelvin para Celsius;<br/>
   Kelvin para Fahrenheit.<br/>
   
-- <h4>Conversões de velocidade:</h4><br/>
+- <h4>Conversões de velocidade:</h4>
   Km/h para Mph;<br/>
   Km/h para M/s;<br/>
   Mph para Km/h;<br/>
@@ -36,7 +36,7 @@
   M/s para Km/h;<br/>
   M/s para Mph.<br/>
   
-- <h4>Operações com matrizes:</h4><br/>
+- <h4>Operações com matrizes:</h4>
   Soma e subtração de matrizes;<br/>
   Multiplicação de matrizes;<br/>
   Matriz cofatora;<br/>
