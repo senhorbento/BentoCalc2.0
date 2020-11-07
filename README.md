@@ -9,35 +9,35 @@
   Variancia;<br/>
   Desvio padrão.<br/>
 
-- Grandezas eletricas:
-  Amperagem;
-  Voltagem;
-  Resistencia;
-  Potencia.
+- Grandezas eletricas:<br/>
+  Amperagem;<br/>
+  Voltagem;<br/>
+  Resistencia;<br/>
+  Potencia.<br/>
   
-- Grandezas mecanicas:
-  Velocidade media;
-  Variação de espaço;
-  Variação de tempo.
+- Grandezas mecanicas:<br/>
+  Velocidade media;<br/>
+  Variação de espaço;<br/>
+  Variação de tempo.<br/>
   
-- Conversões termometricas:
-  Celsius para Fahrenheit;
-  Celsius para Kelvin;
-  Fahrenheit para Kelvin;
-  Fahrenheit para Celsius;
-  Kelvin para Celsius;
-  Kelvin para Fahrenheit.
+- Conversões termometricas:<br/>
+  Celsius para Fahrenheit;<br/>
+  Celsius para Kelvin;<br/>
+  Fahrenheit para Kelvin;<br/>
+  Fahrenheit para Celsius;<br/>
+  Kelvin para Celsius;<br/>
+  Kelvin para Fahrenheit.<br/>
   
-- Conversões de velocidade:
-  Km/h para Mph;
-  Km/h para M/s;
-  Mph para Km/h;
-  Mph para M/s;
-  M/s para Km/h;
-  M/s para Mph.
+- Conversões de velocidade:<br/>
+  Km/h para Mph;<br/>
+  Km/h para M/s;<br/>
+  Mph para Km/h;<br/>
+  Mph para M/s;<br/>
+  M/s para Km/h;<br/>
+  M/s para Mph.<br/>
   
-- Operações com matrizes:
-  Soma e subtração de matrizes;
-  Multiplicação de matrizes;
-  Matriz cofatora;
-  Matriz inversa.
+- Operações com matrizes:<br/>
+  Soma e subtração de matrizes;<br/>
+  Multiplicação de matrizes;<br/>
+  Matriz cofatora;<br/>
+  Matriz inversa.<br/>
