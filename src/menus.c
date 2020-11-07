@@ -3,11 +3,16 @@
 #include <string.h>
 
 #include "menus.h"
+#include "formulas.h"
 
 #define _TAM_TITULO_ 30
 
 void limparTela(){
     system("clear || cls");
+}
+
+void limparBuffer(){
+    setbuf(stdin,NULL);
 }
 
 void cabecalho(char titulo[]){
@@ -122,13 +127,38 @@ void menuZoeira(){
 }
 
 int deNovo(){
-    int resposta;
+    char resposta[10];
     do{
-        printf("\nDeseja continuar?(1 - Sim / 0 - Nao)");
-        scanf("%d", &resposta);
-        if(resposta > 1 || resposta < 0)
-            printf("\nSomente \"1\" ou \"0\" eh aceito\n");
-    }while(resposta > 1 || resposta < 0);
+        limparBuffer();
+        printf("Deseja continuar?[S/N] ");
+        scanf("%s", resposta);
+        limparBuffer();
+        if(!(strcmp(resposta, "N") == 0 || strcmp(resposta, "n") == 0 || strcmp(resposta, "S") == 0 || strcmp(resposta, "s") == 0))
+            printf("Termo incorreto, favor digite \"S\" ou \"N\"\n\n");
+    }while(!(strcmp(resposta, "N") == 0 || strcmp(resposta, "n") == 0 || strcmp(resposta, "S") == 0 || strcmp(resposta, "s") == 0));
     limparTela();
-    return resposta;
+    if (strcmp(resposta, "N") == 0 || strcmp(resposta, "n") == 0)
+        return 0;
+    else return 1;
+}
+
+void mediaAritmetica(){
+    char resposta[10];
+    limparTela();
+    cabecalho("Media Aritmetica");
+    do{
+        limparBuffer();
+        printf("Os termos se repetem?[S/N] ");
+        scanf("%s", resposta);
+        limparBuffer();
+        if(!(strcmp(resposta, "N") == 0 || strcmp(resposta, "n") == 0 || strcmp(resposta, "S") == 0 || strcmp(resposta, "s") == 0))
+            printf("Termo incorreto, favor digite \"S\" ou \"N\"\n\n");
+    }while(!(strcmp(resposta, "N") == 0 || strcmp(resposta, "n") == 0 || strcmp(resposta, "S") == 0 || strcmp(resposta, "s") == 0));
+    
+    if (strcmp(resposta, "N") == 0 || strcmp(resposta, "n") == 0){
+        mediaAritmeticaSimples();
+    }
+    else{
+
+    }
 }

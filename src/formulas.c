@@ -90,17 +90,18 @@ void equacao2(){
         printf("Delta = %.5lf\n", D);
     }
 }
-void mediaAritmetica(){
-    int i;
-    double vetor[1000], resultado;
-    char resposta[10];
-    limparTela();
-    cabecalho("Media Aritmetica");
-    do{
-        printf("Os termos se repetem?[S/N] ");
-        scanf("%s", &resposta);
-        printf("%s", resposta);
-        if(strcmp(resposta, "N") || strcmp(resposta, "n") || strcmp(resposta, "S") || strcmp(resposta, "s"))
-            printf("Somente \"S\" ou \"N\" eh aceito\n\n");
-    }while(strcmp(resposta, "N") || strcmp(resposta, "n") || strcmp(resposta, "S") || strcmp(resposta, "s"));
+
+void mediaAritmeticaSimples(){
+    int i,totalTermos;
+    double valor,resultado=0;
+    cabecalho("Media Aritmetica - Simples");
+    printf("Total de termos = ");
+    scanf("%d", &totalTermos);
+    for(i=0;i<totalTermos;i++){
+        printf("Termo %d = ", i+1);
+        scanf("%lf", &valor);
+        resultado += valor;
+    }
+    resultado = resultado/totalTermos;
+    printf("Media Aritmetica = %.5lf\n", resultado);
 }

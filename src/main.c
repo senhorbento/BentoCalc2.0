@@ -5,6 +5,7 @@
 
 int main(){
     int escolha, selecao, continuar,subSelecao;
+    char resposta[10];
     do{
         menuPrincipal();
         scanf("%d", &escolha);
