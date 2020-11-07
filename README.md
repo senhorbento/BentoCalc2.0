@@ -1,7 +1,4 @@
-<h1> {
-       color: red;
-}
-<h1>Bento Calc New (2.0)</h1>
+#![#ff0000]Bento Calc New (2.0)
  <h2>De volta ao projeto da calculadora, agora com mais conhecimento em C.</h2>
 <h3>Funções que serão incluidas:</h3>
 
