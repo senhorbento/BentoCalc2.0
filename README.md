@@ -4,7 +4,7 @@
 
 - Equação do segundo grau.
 
-- Calculos estatisticos:
+- Calculos estatisticos:\n
   Media artimetica;
   Variancia;
   Desvio padrão.
