@@ -1,5 +1,5 @@
 # BentoCalcNew
- [h3]De volta ao projeto da calculadora, agora com mais conhecimento em C.[/h3]
+ <h3>De volta ao projeto da calculadora, agora com mais conhecimento em C.</h3>
 Funções que serão incluidas:
 
 - Equação do segundo grau.
