@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 #include "menus.h"
 #include "formulas.h"
@@ -88,4 +89,18 @@ void equacao2(){
         printf("X2 = %.5lf\n", C);
         printf("Delta = %.5lf\n", D);
     }
+}
+void mediaAritmetica(){
+    int i;
+    double vetor[1000], resultado;
+    char resposta[10];
+    limparTela();
+    cabecalho("Media Aritmetica");
+    do{
+        printf("Os termos se repetem?[S/N] ");
+        scanf("%s", &resposta);
+        printf("%s", resposta);
+        if(strcmp(resposta, "N") || strcmp(resposta, "n") || strcmp(resposta, "S") || strcmp(resposta, "s"))
+            printf("Somente \"S\" ou \"N\" eh aceito\n\n");
+    }while(strcmp(resposta, "N") || strcmp(resposta, "n") || strcmp(resposta, "S") || strcmp(resposta, "s"));
 }

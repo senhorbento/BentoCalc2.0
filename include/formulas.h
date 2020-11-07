@@ -7,5 +7,6 @@ void resistencia();
 void corrente();
 void potenciaResistencia();
 void potenciaVoltagem();
+void mediaAritmetica();
 
 #endif

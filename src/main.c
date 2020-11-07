@@ -15,8 +15,8 @@ int main(){
                 break;
             case 1: 
                 do{
-                menuEletrica();
-                scanf("%d", &selecao);
+                    menuEletrica();
+                    scanf("%d", &selecao);
                     switch(selecao){
                         case 0:
                             break;
@@ -75,6 +75,15 @@ int main(){
                 do{
                     menuEstatistica();
                     scanf("%d", &selecao);
+                    switch(selecao){
+                        case 0: 
+                            break;
+                        case 1:
+                        do{
+                            mediaAritmetica();
+                            continuar=deNovo();
+                        }while(continuar!=0); 
+                    }
                 }while(continuar!=0);
                 break;
             case 4: 
