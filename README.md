@@ -4,23 +4,23 @@
 
 - <h4>Equação do segundo grau.</h4>
 
-- <h4>Calculos estatisticos:</h4>
-  Media artimetica;<br/>
-  Variancia;<br/>
+- <h4>Cálculos estatísticos:</h4>
+  Média artimética;<br/>
+  Variância;<br/>
   Desvio padrão.<br/>
 
-- <h4>Grandezas eletricas:</h4>
+- <h4>Grandezas elétricas:</h4>
   Amperagem;<br/>
   Voltagem;<br/>
-  Resistencia;<br/>
-  Potencia.<br/>
+  Resistência;<br/>
+  Potência.<br/>
   
-- <h4>Grandezas mecanicas:</h4>
-  Velocidade media;<br/>
+- <h4>Grandezas mecânicas:</h4>
+  Velocidade média;<br/>
   Variação de espaço;<br/>
   Variação de tempo.<br/>
   
-- <h4>Conversões termometricas:</h4>
+- <h4>Conversões termométricas:</h4>
   Celsius para Fahrenheit;<br/>
   Celsius para Kelvin;<br/>
   Fahrenheit para Kelvin;<br/>
