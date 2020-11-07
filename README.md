@@ -4,10 +4,10 @@
 
 - Equação do segundo grau.
 
-- Calculos estatisticos:<br />
-  Media artimetica;
-  Variancia;
-  Desvio padrão.
+- Calculos estatisticos:<br/>
+  Media artimetica;<br/>
+  Variancia;<br/>
+  Desvio padrão.<br/>
 
 - Grandezas eletricas:
   Amperagem;
