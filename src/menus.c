@@ -116,9 +116,7 @@ int menuPotencia(){
         printf("Qual o caso? ");
         scanf("%d", &selecao);
     }while(selecao < 0 || selecao > _MAX_OP_);
-    if (selecao == 1) return 1;
-    else if(selecao == 2) return 2;
-    else if(selecao == 0) return 0;
+    return selecao;
 }
 
 void menuZoeira(){
