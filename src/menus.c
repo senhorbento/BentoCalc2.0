@@ -115,6 +115,6 @@ void menuAritmetica(){
         mediaAritmeticaNrepetida();
     }
     else{
-        //mediaAritmeticaRepetida();
+        mediaAritmeticaRepetida();
     }
 }

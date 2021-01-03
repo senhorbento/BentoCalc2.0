@@ -42,3 +42,26 @@ void mediaAritmeticaNrepetida(){
     resultado = resultado/totalTermos;
     printf("Media Aritmetica = %.5lf\n", resultado);
 }
+
+void mediaAritmeticaRepetida(){
+    int i,j,totalTermos,repeticao;
+    double valor,resultado=0;
+    cabecalho("Media Aritmetica - Repetitiva");
+    printf("Total de termos = ");
+    scanf("%d", &totalTermos);
+    for(i=0;i<totalTermos;i++){
+        printf("Termo %d = ", i+1);
+        scanf("%lf", &valor);
+        if(i<totalTermos-1){
+            printf("Quantas vezes o termo se repete? ");
+            scanf("%d", &repeticao);
+            for(j=0;j<repeticao;j++)
+            resultado += valor;
+            i+=repeticao-1;
+        }
+        else
+            resultado += valor;
+    }
+    resultado = resultado/totalTermos;
+    printf("Media Aritmetica = %.5lf\n", resultado);
+}

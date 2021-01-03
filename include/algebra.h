@@ -3,6 +3,6 @@
 
 void equacao2();
 void mediaAritmeticaNrepetida();
-//void mediaAritmeticaRepetida();
+void mediaAritmeticaRepetida();
 
 #endif
