@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+#include "algebra.h"
+#include "eletrica.h"
 #include "menus.h"
-#include "formulas.h"
+#include "uteis.h"
 
 int main(){
-    int escolha, selecao, continuar,subSelecao;
+    int escolha,selecao,subSelecao,continuar;
     char resposta[10];
     do{
         menuPrincipal();
@@ -81,7 +83,7 @@ int main(){
                             break;
                         case 1:
                         do{
-                            mediaAritmetica();
+                            menuAritmetica();
                             continuar=deNovo();
                         }while(continuar!=0); 
                     }
